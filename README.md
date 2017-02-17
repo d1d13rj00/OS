@@ -1,2 +1,1 @@
-# OS
-Operating systems
+# Operating systems
