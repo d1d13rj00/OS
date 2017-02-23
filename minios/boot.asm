@@ -20,9 +20,12 @@ start:
 ;byte 2 for color attribute
 
 
-    mov al,0
-    mov ah,'*' 
-    mov word [0xb8000],ax
+    mov ah,0
+    mov al,'*' 
+    mov bx,0xb800
+    mov es,bx
+    mov bx,0
+    mov [es:bx],ax
 ;    mov ah,0		    ; Color attribute
 ;    mov dx,mystring	    ; Loading address for string data
 ;    call print_str
